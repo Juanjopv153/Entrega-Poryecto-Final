@@ -1,0 +1,164 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+
+/* colores */
+
+:root{
+    --primary-color: #222831;
+     --secondary-color: #393E46;
+     --third-color: #00ADB5;
+     --fourth-color: #EEEEEE;
+ }
+
+ /* primera Pag */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--fourth-color);
+    margin: 50px;
+}
+
+p{
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .containerLogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35%;
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 100%;
+}
+
+.containerLogo img{
+    width: 100%;
+    border: 2px solid var(--third-color);
+    border-radius: 15px;
+}
+
+.containerLogo h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 3px 8px #a473f3;
+    color: white;
+    width: 100%;
+}
+
+.menu .containerSlider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.containerSlider .containerLista{
+    width: 50%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.containerSlider .list{
+    display: flex;
+    justify-content:  space-around;
+    gap: 50px;
+    padding: 10px;
+    list-style: none;
+}
+
+.containerSlider .itemList{
+    background-color: var(--third-color);
+    padding: 10px 25px;
+}
+
+.itemList a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400px;
+    width: 100%;
+}
+
+.containerSlider .search{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerSlider .search input{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--fourth-color);
+    background-color: transparent;
+}
+
+.containerSlider .search .iconBuscar{
+    color: var(--third-color);
+}
+
+.container-main{
+    background-color: var(--fourth-color);
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 600px){
+    .containerSlider .search{
+       display: none;
+    }
+
+    .menu{
+        width: 100%;
+    }
+}
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+.piePagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    color: var(--fourth-color);
+}
+
+.sections{
+    display: flex;
+}
+
+.sections{
+    flex: 1;
+}
+
+.sections:first-child{
+    flex: 2;
+}
+
+.imgP{
+    width: 170px;
+    position: relative;
+    left: 50%;
+    margin: 40px;
+}
+
+
+main{
+    margin: 20px;
+}
+
